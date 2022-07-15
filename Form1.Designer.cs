@@ -92,15 +92,15 @@
             // 
             // txtResultado
             // 
+            this.txtResultado.Enabled = false;
             this.txtResultado.Location = new System.Drawing.Point(73, 212);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(100, 23);
             this.txtResultado.TabIndex = 5;
-            this.txtResultado.TextChanged += new System.EventHandler(this.txtResultado_TextChanged);
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(38, 296);
+            this.btnLimpar.Location = new System.Drawing.Point(12, 264);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 41);
             this.btnLimpar.TabIndex = 6;
@@ -110,7 +110,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(160, 296);
+            this.btnSair.Location = new System.Drawing.Point(120, 264);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 41);
             this.btnSair.TabIndex = 7;
@@ -120,9 +120,10 @@
             // 
             // btnSoma
             // 
-            this.btnSoma.Location = new System.Drawing.Point(255, 66);
+            this.btnSoma.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSoma.Location = new System.Drawing.Point(211, 90);
             this.btnSoma.Name = "btnSoma";
-            this.btnSoma.Size = new System.Drawing.Size(56, 61);
+            this.btnSoma.Size = new System.Drawing.Size(56, 49);
             this.btnSoma.TabIndex = 8;
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
@@ -130,7 +131,8 @@
             // 
             // btnSubtracao
             // 
-            this.btnSubtracao.Location = new System.Drawing.Point(255, 125);
+            this.btnSubtracao.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSubtracao.Location = new System.Drawing.Point(211, 142);
             this.btnSubtracao.Name = "btnSubtracao";
             this.btnSubtracao.Size = new System.Drawing.Size(56, 57);
             this.btnSubtracao.TabIndex = 9;
@@ -140,9 +142,10 @@
             // 
             // btnMultiplicacao
             // 
-            this.btnMultiplicacao.Location = new System.Drawing.Point(255, 180);
+            this.btnMultiplicacao.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMultiplicacao.Location = new System.Drawing.Point(211, 208);
             this.btnMultiplicacao.Name = "btnMultiplicacao";
-            this.btnMultiplicacao.Size = new System.Drawing.Size(56, 59);
+            this.btnMultiplicacao.Size = new System.Drawing.Size(56, 50);
             this.btnMultiplicacao.TabIndex = 10;
             this.btnMultiplicacao.Text = "*";
             this.btnMultiplicacao.UseVisualStyleBackColor = true;
@@ -150,9 +153,10 @@
             // 
             // btnDivisao
             // 
-            this.btnDivisao.Location = new System.Drawing.Point(255, 236);
+            this.btnDivisao.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDivisao.Location = new System.Drawing.Point(211, 264);
             this.btnDivisao.Name = "btnDivisao";
-            this.btnDivisao.Size = new System.Drawing.Size(56, 46);
+            this.btnDivisao.Size = new System.Drawing.Size(56, 52);
             this.btnDivisao.TabIndex = 11;
             this.btnDivisao.Text = "/";
             this.btnDivisao.UseVisualStyleBackColor = true;
@@ -161,17 +165,20 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(294, 322);
+            this.lblData.BackColor = System.Drawing.Color.Red;
+            this.lblData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblData.Location = new System.Drawing.Point(116, 332);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(38, 15);
+            this.lblData.Size = new System.Drawing.Size(57, 21);
             this.lblData.TabIndex = 12;
             this.lblData.Text = "label1";
+            this.lblData.Click += new System.EventHandler(this.lblData_Click);
             // 
             // lblNomePrincipal
             // 
             this.lblNomePrincipal.AutoSize = true;
             this.lblNomePrincipal.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNomePrincipal.Location = new System.Drawing.Point(73, 21);
+            this.lblNomePrincipal.Location = new System.Drawing.Point(38, 9);
             this.lblNomePrincipal.Name = "lblNomePrincipal";
             this.lblNomePrincipal.Size = new System.Drawing.Size(249, 40);
             this.lblNomePrincipal.TabIndex = 13;
@@ -182,7 +189,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(435, 369);
+            this.ClientSize = new System.Drawing.Size(325, 375);
             this.Controls.Add(this.lblNomePrincipal);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.btnDivisao);

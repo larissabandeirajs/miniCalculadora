@@ -105,8 +105,16 @@ namespace miniCalculadora
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblData.Text = DateTime.Now.ToString("dd'-'MM'-'yyyy");
-           /* dateTimePicker1.Value = DateTime.Now;*/
+              lblData.Text = DateTime.Now.ToString("dd'-'MM'-'yyyy");
+            /* dateTimePicker1.Value = DateTime.Now;*/
+
+            lblResultado.Visible = false;
+            txtResultado.Visible = false;
+            btnDivisao.Visible = false;
+            btnSoma.Visible = false;
+            btnSubtracao.Visible = false;
+            btnMultiplicacao.Visible = false;
+
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
@@ -133,6 +141,11 @@ namespace miniCalculadora
             btnSoma.Visible = false;
             btnSubtracao.Visible = false;
             btnMultiplicacao.Visible = false;
+        }
+
+        private void lblData_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
